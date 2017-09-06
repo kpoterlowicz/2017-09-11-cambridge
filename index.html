@@ -1,19 +1,19 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # use YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "FIXME"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad:         # optional (insert the URL for your Etherpad if you're using one)
+venue: "University of Cambridge"
+address: "Bioinformatics Training Room, Craik-Marshall Building, Downing Site"
+country: "gb"
+language: "en"
+latlng: "52.201951,0.122514"
+humandate: "January 18-19, 2017"
+humantime: "9:30 - 17:30"
+startdate: 2017-09-11
+enddate: 2017-09-12
+instructor: ["Marco Chiapello", "Laurent Gatto", "Hugo Tavares"]
+helper: []
+contact: "Gabriella Rustici <gr231@cam.ac.uk>"
+etherpad: http://pad.software-carpentry.org/2017-09-11-cambridge
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 day1_am: "Data organization in spreadsheets and OpenRefine"
 day1_pm: "Introduction to R"
@@ -102,9 +102,12 @@ Participants should bring their laptops and plan to participate actively. By the
   Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong> Participants must bring a laptop with a 
-  Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
+  <strong>Requirements:</strong> Computers with all necessary software 
+  for this course are available in the training room. However, if participants 
+  want to use their own computer, they will need a laptop with a 
+  Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that 
+  they have administrative privileges on. 
+  They should have a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
   Data Carpentry's
   <a href="{{site.dc_site}}/code-of-conduct/">Code of Conduct</a>.
@@ -137,7 +140,7 @@ Participants should bring their laptops and plan to participate actively. By the
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2>Preliminary Schedule</h2>
+<h2>Course Schedule</h2>
 
 <!-- DO NOT EDIT SURVEY LINKS -->
 <p><em>Surveys</em></p>
@@ -147,23 +150,65 @@ Participants should bring their laptops and plan to participate actively. By the
 
 
 
-<div class="row">
-  <div class="col-md-6">
+<h3>Day 1</h3>
 
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day1_am}}</td> </tr>
-       <tr> <td>Afternoon</td>  <td>{{page.day1_pm}}</td> </tr>
-    </table>
+<a href="welcome.html">Introduction</a>
+
+<h4>Data organization in spreadsheets (Hugo Tavares)</h4>
+  <ol>
+	  <li><a href="https://tavareshugo.github.io/spreadsheet-ecology-lesson/00-intro.html">Introduction</a></li>
+	  <li><a href="https://tavareshugo.github.io/spreadsheet-ecology-lesson/01-format-data.html">Formatting data</a></li>
+	  <li><a href="https://tavareshugo.github.io/spreadsheet-ecology-lesson/02-common-mistakes.html">Common formatting problems</a></li>
+	  <li><a href="https://tavareshugo.github.io/spreadsheet-ecology-lesson/03-dates-as-data.html">Dates as data</a></li>
+	  <li><a href="https://tavareshugo.github.io/spreadsheet-ecology-lesson/04-quality-control.html">Quality control</a></li>
+	  <li><a href="https://tavareshugo.github.io/spreadsheet-ecology-lesson/05-exporting-data.html">Exporting data</a></li>
+	  <li><a href="https://tavareshugo.github.io/spreadsheet-ecology-lesson/06-data-formats-caveats.html">Data format caveats</a></li>
+  </ol>
+  <p>Data files for the lesson are
+    available <a href="https://www.dropbox.com/s/5ncuacnd3arjitc/survey_data_tabs.xls?dl=0">here</a>.</p>
+  <h4>Data cleaning with OpenRefine (Lisa Breckels)</h4>
+
+  <p>Data files for the lesson are
+    available <a href="https://www.dropbox.com/s/kbb4k00eanm19lg/Portal_rodents_19772002_scinameUUIDs.csv?dl=0">here</a>.</p>
+
+							 
+  <h4>Introduction to R (Marco Chiapello)</h4>
+  <ol>
+	  <li><a href="https://mchiapello.github.io/R-ecology-lesson/00-before-we-start.html">Before we start</a></li>
+	  <li><a href="https://mchiapello.github.io/R-ecology-lesson/01-intro-to-R.html">Introduction to R</a></li>
+	  <li><a href="https://mchiapello.github.io/R-ecology-lesson/02-starting-with-data.html">Starting with data</a></li>
+	  <li><a href="https://mchiapello.github.io/R-ecology-lesson/03-data-frames.html">The data.frame class</a></li>
+  </ol>
  
  
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day2_am}}</td> </tr>
-      <tr> <td>Afternoon</td>  <td>{{page.day2_pm}}</td> </tr>
-    </table>
- </div>
-</div>
+  <h3>Day 2</h3>
+
+
+  <h4>Data analysis with R (Hugo Tavares)</h4>
+	<ol>
+	  <li><a href="https://mchiapello.github.io/R-ecology-lesson/04-dplyr.html">Manipulating data with dplyr</a></li>
+  </ol>
+ 
+  <h4>Data visualisation with ggplot2 (Lisa Breckels)</h4>
+  <h4>SQL for data management (Laurent Gatto)</h4>
+      
+  <ol>
+    <li><a href="http://lgatto.github.io/sql-ecology/00-sql-introduction.html">Introduction
+	to SQL</a></li>
+    <li><a href="http://lgatto.github.io/sql-ecology/01-sql-basic-queries.html">Basic
+	queries</a></li>
+    <li><a href="http://lgatto.github.io/sql-ecology/02-sql-aggregation.html">Aggregation</a></li>
+    <li><a href="http://lgatto.github.io/sql-ecology/03-sql-joins-aliases.html">Joins
+	and aliases</a></li>
+    <li><a href="http://lgatto.github.io/R-ecology/06-r-and-sql.html">R
+	and SQL</a> (optional)</li>
+    <!-- <li><a href="http://lgatto.github.io/sql-ecology/sql-solutions.html">SQL solutions</a></l> -->
+  </ol>
+
+  <p>Data files for the workshop are
+    available <a href="http://dx.doi.org/10.6084/m9.figshare.1314459">here</a>.</p>
+     
+  <hr/>
 
 <!--
   ETHERPAD
@@ -298,9 +343,12 @@ Participants should bring their laptops and plan to participate actively. By the
 <h2 id="setup">Setup</h2>
 
 <p>
-To participate in a Data Carpentry workshop, you will need working copies of the 
+  All of the software required for this Data Carpentry workshop will be installed 
+  on the computers at our training venue.
+<p>
+  However, if you want to use your own laptop, you will need working copies of the 
 described software. Please make sure to install everything (or at least to download 
-the installers) before the start of your workshop. Participants should bring and use 
+the installers) before the start of your workshop. Participants can bring and use 
 their own laptops to insure the proper setup of tools for an efficient workflow 
 once you leave the workshop.
 <p>
@@ -311,4 +359,3 @@ Please follow these <a href=install.html>Setup Instructions</a>.
   that may be useful on the
   <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-
